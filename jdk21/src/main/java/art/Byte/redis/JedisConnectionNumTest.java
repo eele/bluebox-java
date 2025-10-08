@@ -20,7 +20,7 @@ public class JedisConnectionNumTest {
         JedisPool jedisPool = new JedisPool(jedisPoolConfig, "", 6379, 10000, "");
 
         for (int j = 0; j < 999999999; j++) {
-            if (j == 172 || j == 280) {
+            if (j == 60 || j == 280) {
                 System.gc();
             }
             Thread.sleep(100);
